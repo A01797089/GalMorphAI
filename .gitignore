@@ -427,3 +427,46 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+.env.*
+
+# Raw and processed astronomical data
+data/raw/*
+data/interim/*
+data/processed/*
+data/external/*
+
+# Trained models
+models/*
+*.pt
+*.pth
+*.h5
+*.keras
+*.onnx
+
+# Outputs
+outputs/figures/*
+outputs/reports/*
+outputs/predictions/*
+outputs/logs/*
+
+# Keep directory structure
+!**/.gitkeep
