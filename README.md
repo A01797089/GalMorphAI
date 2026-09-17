@@ -27,8 +27,8 @@ Desarrollar un framework modular y reproducible que permita:
 
 | Nombre | Matrrícula | Rol |
 |----------|------|----------|
-|Rogelio Geovanni Licona Hernández  | A01796958 | En definición |
-| Valente Cortés Aceves  | A01797149 | En definición |
+|Rogelio Geovanni Licona Hernández  | A01797149 | En definición |
+| Valente Cortés Aceves  | A01796958 | En definición |
 | Francisco Vázquez Martínez | A017970809 | En definición |
 
 ---
