@@ -1,0 +1,68 @@
+{
+  "input_file": "..\\data_download\\dataset.csv",
+  "fits_directory": "..\\data_download\\data",
+  "rows_total_catalog": 10126,
+  "rows_with_image_features": 50,
+  "rows_without_image_features": 10076,
+  "target": "Bars",
+  "image_features": [
+    "g_mean",
+    "g_std",
+    "g_p95",
+    "g_central_fraction",
+    "g_asymmetry",
+    "r_mean",
+    "r_std",
+    "r_p95",
+    "r_central_fraction",
+    "r_asymmetry",
+    "z_mean",
+    "z_std",
+    "z_p95",
+    "z_central_fraction",
+    "z_asymmetry"
+  ],
+  "selected_features_for_image_model": [
+    "dec_sin_std",
+    "g_asymmetry_std",
+    "ra_sin_std",
+    "g_p95_std",
+    "g_mean_std",
+    "z_sqrt_std",
+    "ra_cos_std",
+    "r_central_fraction_std"
+  ],
+  "selection_method": "respaldo para muestra visual pequeña: mejores variables elegibles ordenadas por ANOVA",
+  "correlation_dropped": [
+    "dec_cos_std",
+    "ra_dec_interaction_std",
+    "z_log1p_std",
+    "g_std_std",
+    "r_mean_std",
+    "r_std_std",
+    "z_mean_std",
+    "z_std_std",
+    "z_p95_std",
+    "z_central_fraction_std",
+    "z_asymmetry_std"
+  ],
+  "pca_components": [
+    "pca_1",
+    "pca_2",
+    "pca_3",
+    "pca_4",
+    "pca_5",
+    "pca_6"
+  ],
+  "failed_fits": [],
+  "recommended_tabular_model_filter": "todas las filas",
+  "recommended_image_model_filter": "has_image_features == 1",
+  "excluded_as_predictors": [
+    "name",
+    "fits_path",
+    "Bars",
+    "bar_present",
+    "has_fits",
+    "has_image_features"
+  ]
+}

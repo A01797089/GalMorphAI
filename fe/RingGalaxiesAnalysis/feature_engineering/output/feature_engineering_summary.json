@@ -1,0 +1,91 @@
+{
+  "output_csv": "feature_engineering\\output\\feature_engineered_dataset.csv",
+  "rows": 8408,
+  "columns": 94,
+  "rows_with_image_features": 203,
+  "rows_without_image_features": 8205,
+  "failed_fits": 0,
+  "tabular_features": [
+    "ra_sin",
+    "ra_cos",
+    "dec_sin",
+    "dec_cos",
+    "gal_l",
+    "gal_b",
+    "gal_l_sin",
+    "gal_l_cos",
+    "gal_b_sin",
+    "gal_b_abs",
+    "z_log1p",
+    "z_sqrt"
+  ],
+  "image_features": [
+    "img_g_log_p99_pos",
+    "img_g_log_flux_pos",
+    "img_r_log_p99_pos",
+    "img_r_log_flux_pos",
+    "img_z_log_p99_pos",
+    "img_z_log_flux_pos",
+    "img_gr_log_flux_ratio",
+    "img_rz_log_flux_ratio",
+    "img_r_center_mean",
+    "img_r_concentration_20",
+    "img_r_outer_to_inner_flux",
+    "img_r_peak_radius_norm",
+    "img_r_ring_contrast",
+    "img_r_asymmetry_180",
+    "lupton_lum_mean",
+    "lupton_lum_p99",
+    "lupton_lum_std",
+    "lupton_saturation_mean",
+    "lupton_saturation_p95",
+    "lupton_red_dominance",
+    "lupton_green_dominance",
+    "lupton_lum_center_mean",
+    "lupton_lum_concentration_20",
+    "lupton_lum_outer_to_inner_flux",
+    "lupton_lum_peak_radius_norm",
+    "lupton_lum_ring_contrast",
+    "lupton_lum_asymmetry_180"
+  ],
+  "lupton_downsample_factor": 4,
+  "z_binning_edges_raw_nsa_z": [
+    0.0071216000000000005,
+    0.024841539994417707,
+    0.03304946999736682,
+    0.04518488474816247,
+    0.14797664000000002
+  ],
+  "dropped_by_correlation_threshold_0_90": [
+    "dec_cos_std",
+    "gal_b_sin_std",
+    "img_r_log_p99_pos_std",
+    "img_r_log_flux_pos_std",
+    "lupton_lum_p99_std",
+    "lupton_lum_std_std",
+    "lupton_lum_asymmetry_180_std"
+  ],
+  "recommended_model_columns": [
+    "ra_sin_std",
+    "gal_l_cos_std",
+    "lupton_saturation_mean_std",
+    "z_bin_q1",
+    "z_bin_q2",
+    "z_bin_q3",
+    "z_bin_q4"
+  ],
+  "recommended_filter_for_image_model": "has_image_features == 1",
+  "pca_components_for_95pct_variance": 3,
+  "pca_cumulative_variance": 1.0,
+  "factor_analysis": {
+    "kmo": null,
+    "bartlett_p_value": null
+  },
+  "excluded_as_predictors": {
+    "name": "identificador único",
+    "anillos": "codificación original usada para derivar label; sería leakage",
+    "source": "sesgado por construcción; MaNGA solo aporta positivos, usar solo para auditoría/estratificación",
+    "has_fits": "estado operativo de descarga; no usar como señal física",
+    "has_image_features": "control de calidad de extracción; usar para filtrar modelos de imagen, no como señal física"
+  }
+}
